@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import useFetch from './Hooks/useFetch';
+import React, { useState } from 'react';
 import Questions from './Component/Questions';
 import questions from "./Constants/questions.json"
 import "./App.css"
