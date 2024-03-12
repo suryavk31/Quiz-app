@@ -1,11 +1,47 @@
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import useFetch from './Hooks/useFetch';
+import Questions from './Component/Questions';
+import questions from "./Constants/questions.json"
+import "./App.css"
+import Results from './Component/Results';
 
-function App() {
-  return (
-    <div className="App">
-      Hi this is for an interview
-    </div>
-  );
+const YourComponent = () => {
+const [currentQuestion, setCurrentQuestion] = useState(0)
+const [userAnswer, setUserAnswer] = useState([])
+
+
+const onAnswerClick =(isCorrect) =>{
+  setCurrentQuestion(currentQuestion+1)
+  setUserAnswer([...userAnswer,isCorrect])
+
 }
 
-export default App;
+const resetQuiz = () => {
+  setCurrentQuestion(0)
+  setUserAnswer([])
+}
+
+
+  return (
+ <div className='App'>
+ <h1>Quiz....</h1>
+ {
+  currentQuestion < questions.length &&
+  <Questions
+ question={questions[currentQuestion]}
+ onAnswerClick={onAnswerClick}
+ />}
+
+{ 
+currentQuestion === questions.length &&
+<Results
+ questions= {questions}
+ userAnswer={userAnswer}
+ resetQuiz={resetQuiz}
+ />}
+
+ </div>
+  );
+};
+
+export default YourComponent;

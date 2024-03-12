@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What is the chemical symbol for water?",
+    "options": [
+      {"text": "H2O", "isCorrect": true},
+      {"text": "CO2", "isCorrect": false},
+      {"text": "O2", "isCorrect": false},
+      {"text": "NaCl", "isCorrect": false}
+    ]
+  },
+  {
+    "question": "What is the closest planet to the sun?",
+    "options": [
+      {"text": "Earth", "isCorrect": false},
+      {"text": "Mars", "isCorrect": false},
+      {"text": "Venus", "isCorrect": false},
+      {"text": "Mercury", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "options": [
+      {"text": "Nucleus", "isCorrect": false},
+      {"text": "Mitochondria", "isCorrect": true},
+      {"text": "Ribosome", "isCorrect": false},
+      {"text": "Endoplasmic reticulum", "isCorrect": false}
+    ]
+  },
+  {
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": [
+      {"text": "Oxygen", "isCorrect": false},
+      {"text": "Carbon dioxide", "isCorrect": false},
+      {"text": "Nitrogen", "isCorrect": true},
+      {"text": "Hydrogen", "isCorrect": false}
+    ]
+  },
+  {
+    "question": "What causes the tides on Earth?",
+    "options": [
+      {"text": "The Moon's gravity", "isCorrect": true},
+      {"text": "The Sun's gravity", "isCorrect": false},
+      {"text": "The Earth's rotation", "isCorrect": false},
+      {"text": "The wind", "isCorrect": false}
+    ]
+  }      
+        
+      
+      
+]
